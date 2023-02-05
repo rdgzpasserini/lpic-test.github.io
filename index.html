@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+    <title>LPIC-1 Exam 101</title>
+    <script src="index.js"></script>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <style>
+        /* Estilos para la página */
+        body {
+          background-color: beige;
+          font-family: Arial, sans-serif;
+          text-align: left;
+          padding: 30px;
+        }
+    
+        /* Estilos para el cuestionario */
+        h1 {
+          font-size: 24px;
+          margin-bottom: 50px;
+        }
+    
+        form {
+          margin: 0 left;
+          width: 500px;
+          text-align: left;
+        }
+    
+        p {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+    
+        input[type="radio"] {
+          margin-right: 10px;
+        }
+    
+        input[type="button"] {
+          font-size: 18px;
+          padding: 10px 20px;
+          margin-top: 20px;
+        }
+    
+        #results {
+          font-size: 18px;
+          margin-top: 40px;
+        }
+
+
+      </style>
+
+
+    
+</head>
+<body>
+    <h1>Examen LPIC-1 101</h1>
+    
+    <form id="quiz">
+        <p>1 ¿Qué archivo de configuración de SysV init debe modificarse para desactivar la combinación de teclas ctrl-alt-supr?</p>
+        <input type="radio" name="question1" value="A. /etc/keys">A. /etc/keys<br>
+        <input type="radio" name="question1" value="B. /proc/keys">B. /proc/keys<br>
+        <input type="radio" name="question1" value="C. /etc/inittab">C. /etc/inittab<br>
+        <input type="radio" name="question1" value="D. /proc/inittab">D. /proc/inittab<br>
+        <input type="radio" name="question1" value="A. /etc/keys">E. /etc/reboot<br>
+        <br>
+
+        <p>2 ¿Cuál es el primer programa que suele iniciar, en el momento del arranque, el núcleo de Linux cuando se utiliza SysV init?</p>
+        <input type="radio" name="question2" value="A. /lib/init.so">A. /lib/init.so<br>
+        <input type="radio" name="question2" value="B. /sbin/init">B. /sbin/init<br>
+        <input type="radio" name="question2" value="C. /etc/rc.d/rcinit">C. /etc/rc.d/rcinit<br>
+        <input type="radio" name="question2" value="D. /proc/sys/kernel/init">D. /proc/sys/kernel/init<br>
+        <input type="radio" name="question2" value="E. /boot/init">E. /boot/init<br>
+        <br>
+
+        <p>3 ¿Cuál de los siguientes comandos escribirá un mensaje en los terminales de todos los usuarios conectados?</p>
+        <input type="radio" name="question3" value="A. bcast">A. bcast<br>
+        <input type="radio" name="question3" value="B. mesg">B. mesg<br>
+        <input type="radio" name="question3" value="C. print">C. print<br>
+        <input type="radio" name="question3" value="D. wall">D. wall<br>
+        <input type="radio" name="question3" value="E. yell">E. yell<br>
+        <br>
+
+        <p>4 ¿Cuál de los siguientes parámetros del kernel le indica al kernel que suprima la mayoría de los mensajes de arranque?</p>
+        <input type="radio" name="question4" value="A. silent">A. silent<br>
+        <input type="radio" name="question4" value="B. verbose=0">B. verbose=0<br>
+        <input type="radio" name="question4" value="C. nomesg">C. nomesg<br>
+        <input type="radio" name="question4" value="D. quiet">D. quiet<br>
+        <br>
+
+        <p>5 ¿Cuál de las siguientes opciones para la línea de comandos del kernel cambia el destino de arranque de systemd a rescue.target en lugar del destino predeterminado?</p>
+        <input type="radio" name="question5" value="A. systemd.target=rescue.target">A. systemd.target=rescue.target<br>
+        <input type="radio" name="question5" value="B. systemd.runlevel=rescue.target">B. systemd.runlevel=rescue.target<br>
+        <input type="radio" name="question5" value="C. systemd.service=rescue.target">C. systemd.service=rescue.target<br>
+        <input type="radio" name="question5" value="D. systemd.default=rescue.target">D. systemd.default=rescue.target<br>
+        <input type="radio" name="question5" value="E. systemd.unit=rescue.target">E. systemd.unit=rescue.target<br>
+        <br>
+
+        <p>6 ¿Después de modificar el archivo de configuración de GNU GRUB, ¿qué comando debe ejecutarse para que los cambios surtan efecto?</p>
+        <input type="radio" name="question6" value="A. kill -HUP $(pidof grub)">A. kill -HUP $(pidof grub)<br>
+        <input type="radio" name="question6" value="B. grub-install">B. grub-install<br>
+        <input type="radio" name="question6" value="C. grub">C. grub<br>
+        <input type="radio" name="question6" value="D. No action is required">D. No action is required<br>
+        <br>
+
+        <p>7 ¿Cuál de los siguientes comandos se utiliza para actualizar la lista de paquetes disponibles cuando se utiliza la gestión de paquetes basada en dpkg?</p>
+        <input type="radio" name="question7" value="A. apt-get update">A. apt-get update<br>
+        <input type="radio" name="question7" value="B. apt-get upgrade">B. apt-get upgrade<br>
+        <input type="radio" name="question7" value="C. apt-cache update ">C. apt-cache update<br>
+        <input type="radio" name="question7" value="D. apt-get refresh">D. apt-get refresh<br>
+        <input type="radio" name="question7" value="E. apt-cache upgrade">E. apt-cache upgrade<br>
+        <br>
+
+        <p>8 ¿Cuál de los siguientes comandos se puede utilizar para descargar el núcleo del paquete RPM sin instalarlo?</p>
+        <input type="radio" name="question8" value="A. yum download --no-install kernel">A. yum download --no-install kernel<br>
+        <input type="radio" name="question8" value="B. yumdownloader kernel">B. yumdownloader kernel<br>
+        <input type="radio" name="question8" value="C. rpm --download --package kernel">C. rpm --download --package kernel<br>
+        <input type="radio" name="question8" value="D. rpmdownload kernel">D. rpmdownload kernel<br>
+        <br>
+
+        <p>9 ¿Qué tecla de función se utiliza para iniciar el Modo Seguro en Windows NT?</p>
+        <input type="radio" name="question9" value="A. F10">A. F10<br>
+        <input type="radio" name="question9" value="B. F8">B. F8<br>
+        <input type="radio" name="question9" value="C. F6">C. F6<br>
+        <input type="radio" name="question9" value="D. Windows NT does not support Safe Mode">D. Windows NT does not support Safe Mode<br>
+        <br>
+
+        <p>10 ¿Cuál de las siguientes variables de entorno anula o amplía la lista de directorios que contienen bibliotecas compartidas?</p>
+        <input type="radio" name="question10" value="A. LD_LOAD_PATH">A. LD_LOAD_PATH<br>
+        <input type="radio" name="question10" value="B. LD_LIB_PATH">B. LD_LIB_PATH<br>
+        <input type="radio" name="question10" value="C. LD_LIBRARY_PATH">C. LD_LIBRARY_PATH<br>
+        <input type="radio" name="question10" value="D. LD_SHARE_PATH">D. LD_SHARE_PATH<br>
+        <input type="radio" name="question10" value="E. LD_RUN_PATH">E. LD_RUN_PATH<br>
+        <br>
+
+        <p>11 ¿Qué comando RPM mostrará el nombre del paquete que suministró el archivo /etc/exports?</p>
+        <input type="radio" name="question11" value="A. rpm -F /etc/exports">A. rpm -F /etc/exports<br>
+        <input type="radio" name="question11" value="B. rpm -qf /etc/exports">B. rpm -qf /etc/exports<br>
+        <input type="radio" name="question11" value="C. rpm -Kl /etc/exports">C. rpm -Kl /etc/exports<br>
+        <input type="radio" name="question11" value="D. rpm -qp /etc/exports">D. rpm -qp /etc/exports<br>
+        <input type="radio" name="question11" value="E. rpm -qi /etc/exports">E. rpm -qi /etc/exports<br>
+        <br>
+
+        <p>12 Al eliminar un paquete, ¿cuál de las siguientes opciones de dpkg eliminará completamente los archivos, incluidos los archivos de configuración?</p>
+        <input type="radio" name="question12" value="A. --clean ">A. --clean <br>
+        <input type="radio" name="question12" value="B. --delete">B. --delete<br>
+        <input type="radio" name="question12" value="C. --purge">C. --purge<br>
+        <input type="radio" name="question12" value="D. remove">D. remove<br>
+        <br>
+
+        <p>13 ¿Qué archivo debería editarse para seleccionar las ubicaciones de red desde las que se cargan los archivos de paquetes de instalación de Debian?</p>
+        <input type="radio" name="question13" value="A. /etc/dpkg/dpkg.cfg">A. /etc/dpkg/dpkg.cfg<br>
+        <input type="radio" name="question13" value="B. /etc/apt/apt.conf">B. /etc/apt/apt.conf<br>
+        <input type="radio" name="question13" value="C. /etc/apt/apt.conf.d">C. /etc/apt/apt.conf.d<br>
+        <input type="radio" name="question13" value="D. /etc/apt/sources.list">D. /etc/apt/sources.list<br>
+        <input type="radio" name="question13" value="E. /etc/dpkg/dselect.cfg">E. /etc/dpkg/dselect.cfg<br>
+        <br>
+
+        <p>14 ¿Cuál de los siguientes comandos sobrescribe el gestor de arranque ubicado en /dev/sda sin sobrescribir la tabla de particiones ni los datos que le siguen?</p>
+        <input type="radio" name="question14" value="A. dd if=/dev/zero of=/dev/sda bs=512">A. dd if=/dev/zero of=/dev/sda bs=512<br>
+        <input type="radio" name="question14" value="B. dd if=/dev/zero of=/dev/sda bs=512 count=1">B. dd if=/dev/zero of=/dev/sda bs=512 count=1<br>
+        <input type="radio" name="question14" value="C. dd if=/dev/zero of=/dev/sda bs=440 count=1">C. dd if=/dev/zero of=/dev/sda bs=440 count=1<br>
+        <input type="radio" name="question14" value="D. dd if=/dev/zero of=/dev/sda bs=440">D. dd if=/dev/zero of=/dev/sda bs=440<br>
+        <br>
+
+        <p>15 ¿Cuál de los siguientes comandos se puede utilizar para crear un medio de almacenamiento USB a partir de una imagen de disco?</p>
+        <input type="radio" name="question15" value="A. gdisk">A. gdisk<br>
+        <input type="radio" name="question15" value="B. dd">B. dd<br>
+        <input type="radio" name="question15" value="C. cc">C. cc<br>
+        <input type="radio" name="question15" value="D. fdisk">D. fdisk<br>
+        <input type="radio" name="question15" value="E. mount">E. mount<br>
+        <br>
+
+        <p>16 En Bash, insertar 1>&2 después de un comando redirige</p>
+        <input type="radio" name="question16" value="A. standard error to standard input.">A. standard error to standard input.<br>
+        <input type="radio" name="question16" value="B. standard input to standard error.">B. standard input to standard error.<br>
+        <input type="radio" name="question16" value="C. standard output to standard error.">C. standard output to standard error.<br>
+        <input type="radio" name="question16" value="D. standard error to standard output.">D. standard error to standard output.<br>
+        <input type="radio" name="question16" value="E. standard output to standard input.">E. standard output to standard input.<br>
+        <br>
+
+        <p>17 ¿Qué comando generará una lista de nombres de usuario de /etc/passwd junto con su shell de inicio de sesión?</p>
+        <input type="radio" name="question17" value="A. column -s : 1,7 /etc/passwd">A. column -s : 1,7 /etc/passwd<br>
+        <input type="radio" name="question17" value="B. chop -c 1,7 /etc/passwd">B. chop -c 1,7 /etc/passwd<br>
+        <input type="radio" name="question17" value="C. colrm 1,7 /etc/passwd">C. colrm 1,7 /etc/passwd<br>
+        <input type="radio" name="question17" value="D. cut -d: -f1,7 /etc/passwd">D. cut -d: -f1,7 /etc/passwd<br>
+        <br>
+
+        <p>18 En una estructura de directorios anidados, ¿qué opción de línea de comandos find se utilizaría para restringir el comando a la búsqueda de un número determinado de subdirectorios?</p>
+        <input type="radio" name="question18" value="A. -dirmax">A. -dirmax<br>
+        <input type="radio" name="question18" value="B. -maxdepth">B. -maxdepth<br>
+        <input type="radio" name="question18" value="C. -maxlevels">C. -maxlevels<br>
+        <input type="radio" name="question18" value="D. -n">D. -n<br>
+        <input type="radio" name="question18" value="E. -s">E. -s<br>
+        <br>
+
+        <p>19 ¿Cuál de los siguientes comandos mata el proceso con el PID 123 pero permite que el proceso se "limpie" antes de salir?</p>
+        <input type="radio" name="question19" value="A. kill -PIPE 123">A. kill -PIPE 123<br>
+        <input type="radio" name="question19" value="B. kill -KILL 123">B. kill -KILL 123<br>
+        <input type="radio" name="question19" value="C. kill -STOP 123">C. kill -STOP 123<br>
+        <input type="radio" name="question19" value="D. kill -TERM 123">D. kill -TERM 123<br>
+        <br>
+
+        <p>20 ¿Cuál es el valor máximo de niceness que un usuario normal puede asignar a un proceso con el comando nice al ejecutar un nuevo proceso?</p>
+        <input type="radio" name="question20" value="A. 9">A. 9<br>
+        <input type="radio" name="question20" value="B. 19">B. 19<br>
+        <input type="radio" name="question20" value="C. 49">C. 49<br>
+        <input type="radio" name="question20" value="D. 99">D. 99<br>
+        <br>
+
+        <p></p>
+        <input type="radio" name="question21" value=""><br>
+        <input type="radio" name="question21" value=""><br>
+        <input type="radio" name="question21" value=""><br>
+        <input type="radio" name="question21" value=""><br>
+        <input type="radio" name="question21" value=""><br>
+        <br>
+
+
+        
+        
+
+        
+
+    
+
+        <!-- añadir otras preguntas del cuestionario-->
+
+
+        
+      <input type="button" value="Ver resultados" onclick="showResults()">
+        
+    </form>
+    <br>
+    <div id="results"></div>
+
+</body>
+</html>
